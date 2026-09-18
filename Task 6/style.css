@@ -35,4 +35,14 @@ nav a:hover {
   padding: 0.35rem 0.9rem;
   font-weight: bold;
   font-size: 0.85rem;
+  z-index: 2;
+}
+.behind {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6rem;
+  height: 100%;
+  background-color: orange;
+  z-index: 1;
 }
