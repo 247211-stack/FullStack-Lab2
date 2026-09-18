@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+header,
+footer {
+  background-color: #1a2744;
+  color: white;
+}
+
+nav {
+  background-color: #eeeeee;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+nav a {
+  color: #000080;
+}
+
+nav a:hover {
+  color: #c45c26;
+}
+section {
+  border: 1px solid #cccccc;
+  margin: 12px 15px;
+  padding: 12px;
+}
+.hero {
+  position: relative;
+  padding: 1.5rem 0.75rem;
+}
+.badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: white;
+  color: black;
+  padding: 0.35rem 0.9rem;
+  font-weight: bold;
+  font-size: 0.85rem;
+  z-index: 2;
+}
+.behind {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4rem;
+  height: 100%;
+  background-color: #c45c26;
+  z-index: 1;
+}
+.note {
+  color: red;
+}
+
+#status {
+  color: navy;
+}
+.card {
+  background-color: #fff8e7;
+  border: 1px solid #cccccc;
+  padding: 0.75rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+#two {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 600px) {
+  #two  {
+    grid-template-columns: 1fr;
+  }
+}
+footer {
+  margin-top: 12px;
+  padding: 1rem 0.75rem;
+}
+
+footer p {
+  margin: 0;
+}

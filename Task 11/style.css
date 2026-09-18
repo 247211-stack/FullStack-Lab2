@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+header,
+footer {
+  background-color: navy;
+  color: white;
+}
+
+nav {
+  background-color: #eeeeee;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+nav a {
+  color: navy;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: orange;
+}
+.hero {
+  position: relative;
+  padding: 2rem 1rem;
+}
+.badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: white;
+  color: black;
+  padding: 0.35rem 0.9rem;
+  font-weight: bold;
+  font-size: 0.85rem;
+  z-index: 2;
+}
+.behind {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6rem;
+  height: 100%;
+  background-color: orange;
+  z-index: 1;
+}
+.note {
+  color: red;
+}
+
+#status {
+  color: navy;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #fdf3d7;
+  border: 1px solid orange;
+  padding: 1rem;
+}
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
